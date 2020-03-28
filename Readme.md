@@ -119,53 +119,17 @@ And done :clap: :clap: :clap:
 
 You can now remove your branch from GitHub. You probably won't gonna need it since all its changes got **merged** into `master`.
 
-![elete branch](./assets/merge-3.png)
+![delete branch](./assets/merge-3.png)
 
 <div style="border: 1px solid red">
 <details>
     <summary> ⚠️ Danger zone, be careful - history rewrites down here ⚠️</summary>
 
-#### Squash, Rebase, and Cherry Pick
+I decided to create dedicated `danger zone` for this section and finally remove it, because I don't want to provide you **the simplest** (not uber-hight-crafter etc) way to work with Pull Requests. 
 
-In long standing branches, merging can often cause lots problems when updating if changes in a given branch conflict with changes recently merged into the master branch. If there are many commits to the same file, `git merge` may force you to fix the same merge conflicts over and over again, causing a real headache. While there are many ways to mitigate this issue, such as enabling [`git rerere`](https://www.kernel.org/pub/software/scm/git/docs/git-rerere.html) to reuse recorded resolution of conflict merges, squashing a series of related changes into 1 commit and cherry-picking it into the master is a great solution, especially for topic branches and isolated features.
+Re-writing git history is not part of it IMHO.
 
-There are several advantages of performing merges this way. First, you only have to deal with merge conflicts once, since all commits are compressed into 1. Second, each commit represents an entire set of changes required for a feature or task, which makes it easy to pin point bugs and other problems when they arise and to remove a change set when it's no longer necessary.
-
-There are also disadvantages of squashing commits. First, you will lose the details and information for each change, as all changes squashed are compressed together. So the net effect is the same. Second, it can be dangerous and problematic if used incorrectly, such as squashing commits that have been pushed to the remote server **and** others depend on for their work. Because squashing is changing the git history, you can cause many conflicts that way. However, if you are using this locally or you are the only person working on your branch and you know exactly what you are doing.
-
-To perform this, use the following command
-
-```bash
-git rebase -i HEAD~10
-```
-
-`-i` stands for [interactive mode](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) and `HEAD~10` means to examine the 10 latest commits.
-
-If you see an `fatal: Needed a single revision` error, this usually means that there are not that many commits left. Try a lower number.
-
-This will open up an editor with git commit messages that looks something like this:
-
-![Git Rebase](https://f.cloud.github.com/assets/676185/317107/cdcd54d6-9858-11e2-9e78-7642fa363f10.png)
-
-There are many options available at this stage. These are detailed in [this github help page](https://help.github.com/articles/interactive-rebase). Here, I'm going to simply squash all changes in this pull request into one. Save and close the editor.
-
-![Squashing commits](https://f.cloud.github.com/assets/676185/317112/21e1a702-9859-11e2-8c03-7f344002768e.png)
-
-The next screen will pop up asking you to edit your commit messages. You can choose to edit them or simply continue. Save and close the editor.
-
-![Squash Result](https://f.cloud.github.com/assets/676185/317086/cb3933f8-9857-11e2-9909-44cdd256bc11.png)
-
-Once your squash completes, you can push it to the remote repo. In this case, these squashed commits have been pushed to the server. However, I'm the only user of this branch and can safely force push the commit to update the git repo.
-
-```bash
-git push origin pull-request-demo -f
-```
-
-To merge the commit, we will use [`git cherry-pick`](https://www.kernel.org/pub/software/scm/git/docs/git-cherry-pick.html).
-
-![Cherry Picking](https://f.cloud.github.com/assets/676185/319726/fdc11cfa-98d9-11e2-8891-248d9ed09c05.png)
-
-You are done! Github should detect the changes and update the pull request. You can then marked the pull request as merged and optionally delete the branch.
+Still - you can find this part in [original article](https://github.com/yangsu/pull-request-tutorial#squash-rebase-and-cherry-pick).
 </details>
 </div>
 
