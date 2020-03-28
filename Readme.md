@@ -1,5 +1,11 @@
 # Pull Request Tutorial
 
+<div style="border: solid 1px red; margin: 8px; padding: 4px;">
+<p>This tutorial is fork 🍴 from <a href="https://github.com/yangsu/pull-request-tutorial">github.com/yangsu/pull-request-tutorial</a></p>
+<span>Send 💙 there 😊</span>
+<p>I rephrased some points, add few, remove few and added fresh screens from GitHub.</p>
+</div>
+
 `Pull Request = PR`
 
 This tutorial is written both for:
@@ -42,6 +48,8 @@ There are 2 main work flows when dealing with pull requests:
 1. ~~Pull Request from a [forked repository](https://help.github.com/articles/fork-a-repo)~~ (this article is not about this flow)
 
 Here we are going to focus on 1.
+
+👉 PR from this example: https://github.com/michalczukm/pull-request-tutorial-for-students/pull/1
 
 ### Creating a Topical Branch
 
@@ -166,6 +174,9 @@ You can now remove your branch from GitHub. You probably won't gonna need it sin
 ## Closing a Pull Request 👩‍💻👨‍💻/📖
 
 You can always close PR.
+
+👉 PR from this example: https://github.com/michalczukm/pull-request-tutorial-for-students/pull/2
+
 
 #### Why?
 
