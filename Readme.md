@@ -9,6 +9,21 @@ This tutorial is written both for:
 
 All sections are marked according to which role is making this part.
 
+## Table of contents
+<!-- toc -->
+* [What is a Pull Request? 👩‍💻👨‍💻/📖](#what-is-a-pull-request-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%F0%9F%93%96)
+* [Creating a Pull Request 👩‍💻👨‍💻](#creating-a-pull-request-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB)
+    + [Creating a Topical Branch](#creating-a-topical-branch)
+    + [Creating a Pull Request](#creating-a-pull-request)
+* [Updating a Pull Request 👩‍💻👨‍💻](#updating-a-pull-request-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB)
+* [Using a Pull Request 📖](#using-a-pull-request-%F0%9F%93%96)
+* [Merging a Pull Request 👩‍💻👨‍💻](#merging-a-pull-request-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB)
+* [Closing a Pull Request 👩‍💻👨‍💻/📖](#closing-a-pull-request-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%F0%9F%93%96)
+    - [Why?](#why)
+    - [How?](#how)
+* [More](#more)
+<!-- tocstop -->
+
 ## What is a Pull Request? 👩‍💻👨‍💻/📖
 From Github's [Using Pull Requests Page](https://help.github.com/articles/using-pull-requests)
 > Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
