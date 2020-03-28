@@ -1,6 +1,15 @@
 # Pull Request Tutorial
 
-## What is a Pull Request?
+`Pull Request = PR`
+
+This tutorial is written both for:
+
+* person who create PR, lets call that person **creator** 👩‍💻👨‍💻
+* person who reviews PR, lets call that person **reviewer** 📖
+
+All sections are marked according to which role is making this part.
+
+## What is a Pull Request? 👩‍💻👨‍💻/📖
 From Github's [Using Pull Requests Page](https://help.github.com/articles/using-pull-requests)
 > Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
 
@@ -8,7 +17,9 @@ Pull Requests are commonly used by teams and organizations collaborating using t
 
 Here's [an example pull request](https://github.com/jquery/jquery/pull/1051) from jQuery's github repo.
 
-## Creating a Pull Request
+---
+
+## Creating a Pull Request 👩‍💻👨‍💻
 
 There are 2 main work flows when dealing with pull requests:
 
@@ -69,22 +80,20 @@ Or with constraints, like `Review reqired` (thats how we do it :blush:)
 
 ![PR with constraints](./assets/create-pr-5.png)
 
-### Using a Pull Request
+Great :clap:
 
-So, you received a PR. What next :question:
+Now its time for reviewers 📖 to take a look at your PR.
+I hope you already added them - to they get notified!
 
+From now on this PR is your platform for communication about this code changes.
 
-* View all the commits by all contained by a pull request under the commits tab,
-![Commits tab](./assets/using-pr-1.png)
-* See all file changed, and make inline comments there (recommended). You
-![Files Changed](./assets/using-pr-2.png)
-* Review changes/Finish review
-![Review changes](./assets/using-pr-3.png)
-After that 👇
-![Review changes](./assets/using-pr-4.png)
+**You can:**
 
+* write comments
+* answer to other comments
+* update PR by adding changes (see👇)
 
-### Updating a Pull Request
+## Updating a Pull Request 👩‍💻👨‍💻
 
 :wave: you, PR creator, yes you :exclamation:
 
@@ -101,7 +110,23 @@ git commit -m "meaningful message describing your changes"
 git push origin pull-request-demo
 ```
 
-### Merging a Pull Request
+## Using a Pull Request 📖
+
+So, you received a PR. What next :question:
+
+
+* View all the commits by all contained by a pull request under the commits tab,
+![Commits tab](./assets/using-pr-1.png)
+* See all file changed, and make inline comments there (recommended). You
+![Files Changed](./assets/using-pr-2.png)
+* Review changes/Finish review
+![Review changes](./assets/using-pr-3.png)
+After that 👇
+![Review changes](./assets/using-pr-4.png)
+
+---
+
+## Merging a Pull Request 👩‍💻👨‍💻
 
 Once you and your collaborators are happy with the changes, you start to merge the changes back to master. There are a few ways to do this.
 
@@ -121,19 +146,9 @@ You can now remove your branch from GitHub. You probably won't gonna need it sin
 
 ![delete branch](./assets/merge-3.png)
 
-<div style="border: 1px solid red">
-<details>
-    <summary> ⚠️ Danger zone, be careful - history rewrites down here ⚠️</summary>
+---
 
-I decided to create dedicated `danger zone` for this section and finally remove it, because I don't want to provide you **the simplest** (not uber-hight-crafter etc) way to work with Pull Requests. 
-
-Re-writing git history is not part of it IMHO.
-
-Still - you can find this part in [original article](https://github.com/yangsu/pull-request-tutorial#squash-rebase-and-cherry-pick).
-</details>
-</div>
-
-### Closing a Pull Request
+## Closing a Pull Request 👩‍💻👨‍💻/📖
 
 You can always close PR.
 
@@ -150,3 +165,18 @@ In general - be verbose, be good communicator, ask :blush:
 
 #### How?
 ![Close PR](./assets/close-pr-1.png)
+
+---
+
+## More
+<div style="border: 1px solid red">
+<details>
+    <summary> ⚠️ Danger zone, be careful - history rewrites down here ⚠️</summary>
+
+I decided to create dedicated `danger zone` for this section and finally remove it, because I don't want to provide you **the simplest** (not uber-hight-crafter etc) way to work with Pull Requests.
+
+Re-writing git history is not part of it IMHO.
+
+Still - you can find this part in [original article](https://github.com/yangsu/pull-request-tutorial#squash-rebase-and-cherry-pick), since it was part of it.
+</details>
+</div>
