@@ -76,6 +76,21 @@ You can even leave a comment on particular lines in the code changed, simply by 
 
 ![Comment in line](https://f.cloud.github.com/assets/676185/316916/015be558-984d-11e2-9c4c-2ddc793fac3c.png)
 
+### Updating a Pull Request
+
+Since pull request is a request to add commit from one stream (branch) to another, the simplest way to update code in your PR is to ... push new commits on your branch.
+
+```bash
+# add changes, improvements, make your PR better
+...
+
+# then commit it
+git commit -m "meaningful message describing your changes"
+
+# and push it
+git push origin pull-request-demo
+```
+
 ### Merging a Pull Request
 
 Once you and your collaborators are happy with the changes, you start to merge the changes back to master. There are a few ways to do this.
@@ -94,6 +109,10 @@ You can find the instruction to do so by clicking the `(i)` icon on the merge ba
 ![Merging Instructions](https://f.cloud.github.com/assets/676185/316954/b34855f6-984f-11e2-9713-6c8288617a78.png)
 
 However, there's an alternative that may be better for long standing branches.
+
+<div style="border: 1px solid red">
+<details>
+    <summary> ⚠️ Danger zone, be careful - history rewrites down here ⚠️</summary>
 
 #### Squash, Rebase, and Cherry Pick
 
@@ -136,6 +155,9 @@ To merge the commit, we will use [`git cherry-pick`](https://www.kernel.org/pub/
 ![Cherry Picking](https://f.cloud.github.com/assets/676185/319726/fdc11cfa-98d9-11e2-8891-248d9ed09c05.png)
 
 You are done! Github should detect the changes and update the pull request. You can then marked the pull request as merged and optionally delete the branch.
+</details>
+</div>
+
 
 ### Closing a Pull Request
 
