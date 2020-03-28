@@ -6,6 +6,8 @@
 <p>I rephrased some points, add few, remove few and added fresh screens from GitHub.</p>
 </div>
 
+---
+
 `Pull Request = PR`
 
 This tutorial is written both for:
